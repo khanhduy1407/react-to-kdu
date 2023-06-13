@@ -1,0 +1,42 @@
+{
+  "name": "@nkduy/react-to-kdu",
+  "version": "1.0.0",
+  "description": "Turn a React component into a Kdu component.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo test",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "prepublishOnly": "npm run build",
+    "dev": "wite demo"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "khanhduy1407/react-to-kdu",
+    "type": "git"
+  },
+  "author": "NKDuy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "kdu": "^3.0.13",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tsup": "^4.8.21",
+    "typescript": "^4.2.4",
+    "wite": "^2.9.15"
+  },
+  "peerDependencies": {
+    "kdu": "^3.0.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
